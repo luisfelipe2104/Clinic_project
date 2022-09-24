@@ -1,8 +1,4 @@
 import './index.css';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
-
 
 function index() {
     return (
@@ -12,8 +8,8 @@ function index() {
                 <h1>Selecione a forma de atendimento: </h1>
             </div>
             <div className="opcoes">
-                <Button variant="outline-success">Particular</Button>{' '}
-                <Button variant="outline-success">SUS</Button>{' '}
+                <input className='botao' type="button" value="Particular" />
+                <input className='botao' type="button" value="SUS" />
             </div>
             <div className="container">
 
@@ -26,10 +22,9 @@ function index() {
                 <label>Informe a data e hora que em que deseja ser atendido: </label>
                 <input className='input' type="text" />
 
-                <Button className='botao' variant="outline-success">Agendar consulta</Button>{' '}
+                <input className='botao' type="button" value="Marcar consulta" />
 
             </div>
-
 
 
         </div>

@@ -23,12 +23,10 @@
 }
 
 .botao{
-    margin-bottom: 50px;
+    width: 250px;
 }
 
 .input{
     width: 250px;
     text-align: center;
-    border-radius: 5px;
-    border: 1px solid black;
 }

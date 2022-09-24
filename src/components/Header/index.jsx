@@ -10,61 +10,51 @@ import './index.css';
 
 function index() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <section class="container">
-          <section class="brand">
-            <Navbar.Brand href="#home">
-              <div  class="brandItem">
-                <Link className='link' to="/">
-                  <h1>Clínica Médica</h1>
-                  <h2>Exames & Diagnósticos</h2>
-                </Link>
-              </div>
-            </Navbar.Brand>
-          </section>
+      <Navbar bg="light" expand="lg">
+        <Container class="container">
+          <Navbar.Brand>
+            <div  class="brandItem">
+              <Link className='link brand' to="/">
+                <h1>Clínica Médica</h1>
+                <h2>Exames & Diagnósticos</h2>
+              </Link>
+            </div>
+          </Navbar.Brand>
 
-
-          <Navbar.Collapse id="basic-navbar-nav">
-            <div class="extend"><Navbar.Toggle aria-controls="basic-navbar-nav" /></div>
-
-              //NAO MEXER NA RESPONSIVIDADE!!! POIS ELA TA TODA RUIM, E PODE PIORAR KAKAKAKA
-
-            <section class="navbar">
+        
+          <section>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home"><div class="nav-item">Sobre</div></Nav.Link>
-                <Nav.Link href="#link"><div class="nav-item">Contato</div></Nav.Link>
+                <Nav.Link>Sobre</Nav.Link>
+
                 <NavDropdown title="Políticas de Dados" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
-                    <Link className='link' to="/lei-geral-de-protecao-de-dados">Lei geral de proteção de dados</Link>
+                  <NavDropdown.Item>
+                    <Link className='link' to="/lei-geral-de-protecao-de-dados">
+                      Lei geral de proteção de dados
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item>
                     Leis de proteção de dados
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item >
                     algo a mais
                   </NavDropdown.Item>
                 </NavDropdown>
 
                 <NavDropdown title="Perfil" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item>
                     <Link className="link" to="/login">Login</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item>
                     <Link className="link" to="/cadastrar">Criar conta</Link>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    <Link className="link" to="/agendamento-de-consultas">Agende sua consulta</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-            </section>
-          </Navbar.Collapse>
-          
-
-        </section>
-      </Container>
-    </Navbar>
+            </Navbar.Collapse>
+          </section>
+        </Container>
+      </Navbar>
   );
 }
 
