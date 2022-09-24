@@ -1,10 +1,17 @@
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import { useState } from 'react'
 
 import './index.css';
 
 function SizesExample() {
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  const [senha, setSenha] = useState("")
+  const [senha2, setSenha2] = useState("")
+  const [telefone, setTelefone] = useState("")
+
   return (
     <section class="container-main">
       <section class="item">
@@ -17,6 +24,10 @@ function SizesExample() {
             Nome Completo
           </InputGroup.Text>
           <Form.Control
+            onChange={(e) => {
+              setNome(e.target.value)
+              console.log(nome)
+            }}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
@@ -26,6 +37,10 @@ function SizesExample() {
             Email
           </InputGroup.Text>
           <Form.Control
+            onChange={(e) => {
+              setEmail(e.target.value)
+              console.log(email)
+            }}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
@@ -35,6 +50,10 @@ function SizesExample() {
             Senha
           </InputGroup.Text>
           <Form.Control
+            onChange={(e) => {
+              setSenha(e.target.value)
+              console.log(senha)
+            }}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
@@ -44,6 +63,10 @@ function SizesExample() {
             Confirme sua senha
           </InputGroup.Text>
           <Form.Control
+            onChange={(e) => {
+              setSenha2(e.target.value)
+              console.log(senha2)
+            }}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
@@ -53,6 +76,10 @@ function SizesExample() {
             Número de telefone
           </InputGroup.Text>
           <Form.Control
+            onChange={(e) => {
+              setTelefone(e.target.value)
+              console.log(telefone)
+            }}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />

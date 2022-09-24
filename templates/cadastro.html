@@ -1,38 +1,55 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}" />
     <title>Cadastro</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <div class="imagem">
+        <img
+          class="img-login"
+          src="{% static 'css/img/img-login.jpg' %}"
+          alt=""
+        />
+      </div>
 
-        <div class="imagem">
-            <img class="img-login" src="img/img-login.jpg" alt="">
-        </div>
+      <div class="login">
+        <h1>Crie uma conta:</h1>
 
-        <div class="login">
+        <input
+          class="usuario"
+          type="text"
+          name="usuario"
+          placeholder="Nome completo..."
+        />
+        <input class="email" type="email" name="email" placeholder="Email..." />
+        <input
+          class="senha"
+          type="password"
+          name="password1"
+          placeholder="Senha..."
+        />
+        <input
+          class="senha"
+          type="password"
+          placeholder="Confirme sua senha..."
+          name="password2"
+        />
+        <input
+          class="telefone"
+          type="number"
+          placeholder="Número de telefone"
+          name="telefone"
+        />
 
-            <h1>Crie uma conta:</h1>
-
-            <input class="usuario" type="text" placeholder="Nome completo...">
-            <input class="email" type="email" placeholder="Email...">
-            <input class="senha" type="password" placeholder="Senha...">
-            <input class="senha" type="password" placeholder="Confirme sua senha...">
-            <input class="telefone" type="number" placeholder="Número de telefone">
-
-            <input type="button" class="botao" value="Cadastrar">
-
-        </div>
-
+        <input type="button" class="botao" value="Cadastrar" />
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
