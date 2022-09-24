@@ -53,10 +53,14 @@ function index() {
                   <NavDropdown.Item href="#action/3.2">
                     <Link className="link" to="/cadastrar">Criar conta</Link>
                   </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    <Link className="link" to="/agendamento-de-consultas">Agende sua consulta</Link>
+                  </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </section>
           </Navbar.Collapse>
+          
 
         </section>
       </Container>
