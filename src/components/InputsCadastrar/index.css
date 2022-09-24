@@ -1,0 +1,13 @@
+.container-main{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 5vh;
+}
+
+.item{
+    width: 40vw;
+}
+.item > img{
+    max-width: 40vw;
+}
