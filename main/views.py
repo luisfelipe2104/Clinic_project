@@ -23,5 +23,13 @@ def TodosPacientes(request):
 
     return Response(serializer.data)
 
+@api_view(['GET'])
+def Login(request, pk):
+    paciente = models.Paciente.objects.get(email=pk)
+
+    serializer = serializers.PacienteSerializer(paciente, many=False)
+
+    return Response(serializer.data)
+
 def home(request):
     return render(request, 'index.html')

@@ -9,7 +9,7 @@ from datetime import datetime
 
 class Paciente(models.Model):
     # usuario = models.CharField(max_length=30, null=False)
-    email = models.EmailField(max_length=254, null=False)
+    email = models.EmailField(max_length=254, null=False, unique=True)
     senha = models.CharField(max_length=30, null=False)
     nome = models.CharField(max_length=100, null=False)
     cpf = models.CharField(max_length=11, null=False)
