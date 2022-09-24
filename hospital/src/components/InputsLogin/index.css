@@ -6,7 +6,7 @@
 }
 
 .item{
-    width: 40vw;
+    width: fit-content;
 }
 .item > img{
     max-width: 40vw;

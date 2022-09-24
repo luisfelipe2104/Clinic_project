@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Nav from 'react-bootstrap/Nav';
 
-function OffCanvasExample({ name, ...props }) {
+import ModalConsulta from '../ModalConsulta'
+import './index.css'
+
+
+function OffCanvasExample({ name, conteudo, ...props }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -15,11 +20,14 @@ function OffCanvasExample({ name, ...props }) {
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Medico e enfermeiro</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <Nav defaultActiveKey="/" className="flex-column">
+            <Nav.Link>
+              <ModalConsulta></ModalConsulta>
+            </Nav.Link>
+          </Nav>
         </Offcanvas.Body>
       </Offcanvas>
     </>
