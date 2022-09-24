@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+
+    background-color: white;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho-menu-item{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    flex: 1 1 150px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(120, 201, 163);
+}
+
+.card h1{
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+.card h3{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+#card1{
+    background-color: rgb(120, 201, 163);
+}
+
+#card2{
+    background-color: rgb(23, 171, 109);
+}
+
+#card3{
+    background-color: rgb(31, 130, 87);
+}
+
+.agendamento{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button{
+    background-color: blueviolet;
+    padding: 15px;
+    border: 1px black solid;
+    border-radius: 5px;
+    color: black;
+}
+
+.button:hover{
+    background-color: darkviolet;
+}
