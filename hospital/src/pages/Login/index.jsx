@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import Inputs from '../../components/InputsLogin';
 
-import '../reset.css';
+import '../../reset.css';
 
 function index() {
   return (

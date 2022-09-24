@@ -8,7 +8,7 @@ function SizesExample() {
   return (
     <section class="container-main">
       <section class="item">
-        <img src="https://www.snqtb.pt/media/wrdbjs3m/fcs.png"/>
+        <img src="https://www.snqtb.pt/media/wrdbjs3m/fcs.png" />
       </section>
 
       <section class="item">
@@ -30,16 +30,6 @@ function SizesExample() {
             aria-describedby="inputGroup-sizing-default"
           />
         </InputGroup>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="inputGroup-sizing-default">
-            Senha
-          </InputGroup.Text>
-          <Form.Control
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup>
-
         <Button variant="outline-success">Entrar</Button>{' '}
 
       </section>

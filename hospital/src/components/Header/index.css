@@ -36,3 +36,12 @@
 .item{
     margin: auto;
 }
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    color: black;
+}
