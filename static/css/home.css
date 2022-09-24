@@ -26,10 +26,25 @@
     text-align: center;
 }
 
+body{
+    background-image: url(../img/img-main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .card{
@@ -37,6 +52,7 @@
     margin: 5px;
     padding: 10px;
     background-color: rgb(120, 201, 163);
+    
 }
 
 .card h1{
