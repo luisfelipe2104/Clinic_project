@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
-import '../../';
+
 
 import './index.css';
 
@@ -28,7 +28,6 @@ function index() {
           <Navbar.Collapse id="basic-navbar-nav">
             <div class="extend"><Navbar.Toggle aria-controls="basic-navbar-nav" /></div>
 
-              //NAO MEXER NA RESPONSIVIDADE!!! POIS ELA TA TODA RUIM, E PODE PIORAR KAKAKAKA
 
             <section class="navbar">
               <Nav className="me-auto">

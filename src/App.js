@@ -20,7 +20,6 @@ function App() {
               <Route path='/lei-geral-de-protecao-de-dados' element={<PoliticasDeDados />} />
               <Route path='/agendamento-de-consultas' element={<Consultas />} />
 
-
           </Routes>
       </Router>
     </div>

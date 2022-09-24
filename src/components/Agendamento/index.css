@@ -8,12 +8,6 @@
     text-align: center;
 }
 
-.opcoes{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .container{
     display: flex;
     flex-direction: column;
