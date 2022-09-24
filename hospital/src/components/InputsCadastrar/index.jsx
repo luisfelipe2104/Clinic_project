@@ -11,6 +11,35 @@ function SizesExample() {
   const [senha, setSenha] = useState("")
   const [senha2, setSenha2] = useState("")
   const [telefone, setTelefone] = useState("")
+  const [cpf, setCpf] = useState("")
+
+  function Cadastrar(){
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        senha: senha,
+        nome: nome,
+        telefone: telefone,
+        cpf:cpf,
+      }),
+    };
+    if(senha === senha2){
+      fetch("http://127.0.0.1:8000/create-user/", requestOptions)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data)
+        })
+    }
+    else{
+      console.log("senha sao diferentes")
+    }
+  }
 
   return (
     <section class="container-main">
@@ -31,6 +60,18 @@ function SizesExample() {
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              CPF
+            </InputGroup.Text>
+            <Form.Control
+              onChange={(e) => {
+                setCpf(e.target.value)
+                console.log(cpf)
+              }}
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
         </InputGroup>
         <InputGroup className="mb-3">
           <InputGroup.Text id="inputGroup-sizing-default">
@@ -85,8 +126,8 @@ function SizesExample() {
           />
         </InputGroup>
 
-        <Button variant="outline-success">Cadastrar</Button>{' '}
-
+        <Button onClick={Cadastrar} variant="outline-success">Cadastrar</Button>
+</InputGroup>
       </section>
     </section>
   );
