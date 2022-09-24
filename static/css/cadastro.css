@@ -1,30 +1,20 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-body {
-    display: flex;
-    align-items: center;
-
-    flex-direction: row;
-
-    background-color: white;
-
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-        
-    position: absolute;
 }
 
 .container {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    align-items: center;
 
     font-family: sans-serif;
     color: black;
@@ -33,13 +23,22 @@ body {
 
     text-align: center;
 
+    height: 100vh;
+
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
 }
 
 .login {
     display: flex;
     flex-direction: column;
 
-    margin: 0 auto;
+    justify-content: flex-start;
+
+    margin: 15px;
     
     gap: 15px;
 }
@@ -153,6 +152,8 @@ input[type=number] {
 }
 
 .img-login{
-    width: 500px;
+    width: 70%;
     border-radius: 15px;
+
+    box-shadow: 8px 10px 20px black;
 }
