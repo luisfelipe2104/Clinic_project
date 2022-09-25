@@ -12,10 +12,13 @@
 
 .link:hover{
     text-decoration: none;
-    color: none; 
+    color: black; 
 }
 
 .brand{
     color:rgb(27, 165, 199);
 }
 
+.titulo-da-pagina:hover {
+    color:rgb(27, 165, 199);
+}
