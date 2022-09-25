@@ -13,7 +13,7 @@ function SizesExample() {
   const [telefone, setTelefone] = useState("")
   const [cpf, setCpf] = useState("")
 
-  function Cadastrar(){
+  function Cadastrar() {
     const requestOptions = {
       method: "POST",
       headers: {
@@ -24,10 +24,10 @@ function SizesExample() {
         senha: senha,
         nome: nome,
         telefone: telefone,
-        cpf:cpf,
+        cpf: cpf,
       }),
     };
-    if(senha === senha2){
+    if (senha === senha2) {
       fetch("http://127.0.0.1:8000/create-user/", requestOptions)
         .then((res) => {
           return res.json();
@@ -36,15 +36,16 @@ function SizesExample() {
           console.log(data)
         })
     }
-    else{
+    else {
       console.log("senha sao diferentes")
     }
   }
 
   return (
     <section class="container-main">
+      <h1 className='titulo-cadastro' >Cadastro</h1>
       <section class="item">
-        <img src="https://www.snqtb.pt/media/wrdbjs3m/fcs.png"/>
+        <img src="https://www.snqtb.pt/media/wrdbjs3m/fcs.png" />
       </section>
 
       <section class="item">
@@ -72,62 +73,62 @@ function SizesExample() {
               aria-label="Default"
               aria-describedby="inputGroup-sizing-default"
             />
-        </InputGroup>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="inputGroup-sizing-default">
-            Email
-          </InputGroup.Text>
-          <Form.Control
-            onChange={(e) => {
-              setEmail(e.target.value)
-              console.log(email)
-            }}
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="inputGroup-sizing-default">
-            Senha
-          </InputGroup.Text>
-          <Form.Control
-            onChange={(e) => {
-              setSenha(e.target.value)
-              console.log(senha)
-            }}
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="inputGroup-sizing-default">
-            Confirme sua senha
-          </InputGroup.Text>
-          <Form.Control
-            onChange={(e) => {
-              setSenha2(e.target.value)
-              console.log(senha2)
-            }}
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="inputGroup-sizing-default">
-            Número de telefone
-          </InputGroup.Text>
-          <Form.Control
-            onChange={(e) => {
-              setTelefone(e.target.value)
-              console.log(telefone)
-            }}
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup>
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Email
+            </InputGroup.Text>
+            <Form.Control
+              onChange={(e) => {
+                setEmail(e.target.value)
+                console.log(email)
+              }}
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Senha
+            </InputGroup.Text>
+            <Form.Control
+              onChange={(e) => {
+                setSenha(e.target.value)
+                console.log(senha)
+              }}
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Confirme sua senha
+            </InputGroup.Text>
+            <Form.Control
+              onChange={(e) => {
+                setSenha2(e.target.value)
+                console.log(senha2)
+              }}
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Número de telefone
+            </InputGroup.Text>
+            <Form.Control
+              onChange={(e) => {
+                setTelefone(e.target.value)
+                console.log(telefone)
+              }}
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
 
-        <Button onClick={Cadastrar} variant="outline-success">Cadastrar</Button>
-</InputGroup>
+          <Button onClick={Cadastrar} variant="outline-success">Cadastrar</Button>
+        </InputGroup>
       </section>
     </section>
   );

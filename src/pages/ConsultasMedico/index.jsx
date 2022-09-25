@@ -1,10 +1,12 @@
 import OffCanvas from '../../components/offCanvas'
+import Header from '../../components/Header'
 
-function Index({user}) {
+function Index({ user }) {
 
   return (
     <>
-        <OffCanvas user={user} name="Tarefas?"></OffCanvas>
+      <Header />
+      <OffCanvas user={user} name="Tarefas?"></OffCanvas>
     </>
   );
 }

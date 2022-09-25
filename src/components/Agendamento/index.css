@@ -6,6 +6,7 @@
 
 .titulos{
     text-align: center;
+    color:rgb(27, 165, 199);
 }
 
 .opcoes{
@@ -20,6 +21,8 @@
 
     gap: 10px;
 
+    color:rgb(27, 165, 199);
+
 }
 
 .botao{
@@ -30,5 +33,9 @@
 .input{
     margin: 0 auto;
     width: 250px;
+    text-align: center;
+}
+
+.inputDiferente{
     text-align: center;
 }

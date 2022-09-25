@@ -3,10 +3,11 @@ import './index.css'
 
 function index() {
     return (
-        <>
-            <h1>Teste</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quia reprehenderit, eius ipsum sunt laudantium voluptates soluta! Pariatur, aspernatur. Cupiditate, commodi! Autem ex sit quia sequi voluptas modi, quibusdam neque.</p>
-        </>
+        <div className="container-lgpd">
+            <h1 className="titulo-lgpd">Lei Geral de Proteção de Dados</h1>
+            <p>Na TECLINIC, privacidade e segurança são prioridades. <br /> 
+            Nos comprometemos com a transparência do tratamento de dados pessoais dos nossos colaboradores, clientes, prestadores de serviços e fornecedores.</p>
+        </div>
     );
 }
 

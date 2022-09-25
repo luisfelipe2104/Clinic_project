@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button';
 import './index.css';
 import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -60,7 +61,7 @@ function Index(props) {
                 <label> Informe o motivo da consulta: </label>
                 <input onChange={(e) => setRelatorio(e.target.value)} className='inputDiferente' type="text" />
 
-                <input className='botao' type="button" onClick={Marcar} value="Marcar consulta" />
+                <Button className='botao' variant="outline-success" onClick={Marcar}>Marcar consulta</Button>{' '}
 
             </div>
 

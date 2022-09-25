@@ -45,14 +45,15 @@ function OffCanvasExample({ user, name, conteudo, ...props }) {
 
   return (
     <>
-    <h1>Consultas:</h1>
+    <h1 className='titulo-consultas'>Consultas:</h1>
       {minhasConsultas.map((consulta, index) => (
 
           <div className="border">
-            <p><h1>Paciente:</h1> {user.nome}</p>
-            <p><h1>Relatorio:</h1> {consulta.relatorio}</p>
-            <p><h1>Cidade:</h1> {consulta.endereco}</p>
-            <p><h1>Data:</h1> {consulta.horario_consulta}</p>
+            <div className="info"><p><h1>Paciente:</h1> {user.nome}</p></div>
+            <div className="info"><p><h1>Relatorio:</h1> {consulta.relatorio}</p></div>
+            <div className="info"><p><h1>Cidade:</h1> {consulta.endereco}</p></div>
+            <div className="info"><p><h1>Data:</h1> {consulta.horario_consulta}</p></div>
+            
           </div>
 
       )

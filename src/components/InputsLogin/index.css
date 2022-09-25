@@ -11,3 +11,10 @@
 .item > img{
     max-width: 40vw;
 }
+
+.titulo-login{
+    display: block;
+    width: 100%;
+    color:rgb(27, 165, 199);
+    margin-bottom: 25px;
+}
