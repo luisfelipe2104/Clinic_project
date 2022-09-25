@@ -7,13 +7,10 @@ function index() {
                 <h1>Agende sua consulta!</h1>
                 <h1>Selecione a forma de atendimento: </h1>
             </div>
-            <div className="opcoes">
-                <input className='botao' type="button" value="Particular" />
-                <input className='botao' type="button" value="SUS" />
-            </div>
+
             <div className="container">
 
-                <label>Informe sua cidade: </label>
+                <label>Informe a sua cidade: </label>
                 <input className='input' type="text" />
 
                 <label>Informe a especialidade médica: </label>
@@ -21,6 +18,9 @@ function index() {
 
                 <label>Informe a data e hora que em que deseja ser atendido: </label>
                 <input className='input' type="text" />
+
+                <label> Informe o motivo da consulta: </label>
+                <input className='inputDiferente' type="text" />
 
                 <input className='botao' type="button" value="Marcar consulta" />
 
