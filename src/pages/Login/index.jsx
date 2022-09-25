@@ -3,13 +3,13 @@ import Inputs from '../../components/InputsLogin';
 
 import '../../reset.css';
 
-function index() {
+function Index(props) {
   return (
     <div>
         <Header/>
-        <Inputs/>
+        <Inputs user={props.user} setUser={props.setUser} />
     </div>
   );
 }
 
-export default index;
+export default Index;

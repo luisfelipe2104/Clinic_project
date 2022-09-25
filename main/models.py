@@ -15,6 +15,9 @@ class Paciente(models.Model):
     cpf = models.CharField(max_length=11, null=False)
     telefone = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.nome
+
 class Hospital(models.Model):
     nome = models.CharField(max_length=50, null=False)
     cnpj = models.IntegerField(null=False)
@@ -29,6 +32,9 @@ class Medico(models.Model):
     telefone = models.CharField(max_length=20)
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE, null=False)
 
+    def __str__(self):
+        return self.nome
+
 class Enfermeiro(models.Model):
     # usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     # usuario = models.CharField(max_length=30, null=False)
@@ -39,14 +45,20 @@ class Enfermeiro(models.Model):
     telefone = models.CharField(max_length=20)
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE, null=False)
 
+    def __str__(self):
+        return self.nome
+
 class Consulta(models.Model):
     relatorio = models.TextField(null=False)
-    horario_consulta = models.DateTimeField(null=False)
+    horario_consulta = models.CharField(max_length=30, null=False)
     endereco = models.CharField(max_length=50, null=False)
     sala = models.IntegerField(null=False)
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE, null=False)
     medico = models.ForeignKey(Medico, on_delete=models.CASCADE, null=False)
     enfermeiro = models.ForeignKey(Enfermeiro, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.relatorio
 
 class Medicamento(models.Model):
     precricaoMedica = models.TextField(null=False)

@@ -21,7 +21,7 @@ function index() {
             </div>
           </Navbar.Brand>
 
-        
+
           <section>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -48,6 +48,14 @@ function index() {
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link className="link" to="/cadastrar">Criar conta</Link>
+                  </NavDropdown.Item>
+
+                  <NavDropdown.Item>
+                    <Link className="link" to="/marcar-consulta/">Marcar Consulta</Link>
+                  </NavDropdown.Item>
+
+                  <NavDropdown.Item>
+                    <Link className="link" to="/consulta-medico/">Minhas Consultas</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>

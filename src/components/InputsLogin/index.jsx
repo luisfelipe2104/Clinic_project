@@ -5,7 +5,7 @@ import { useState } from "react"
 
 import './index.css';
 
-function SizesExample() {
+function SizesExample(props) {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   function Login(){
@@ -15,6 +15,7 @@ function SizesExample() {
       if(data){
         if(data.senha == password){
           console.log("Logged in")
+          props.setUser(data)
         }
         else{
           console.log("senha incorreta")
